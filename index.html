@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Flatiron Movie Theater</h1>
+    
+    <!-- Search form -->
+    <form id="search-form" class="mb-4">
+      <div class="form-group">
+        <input type="text" id="search" class="form-control" placeholder="Search movies...">
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <!-- Movies container -->
+    <div id="movies" class="row gap-3"></div>
+
+    <!-- Modal for adding a movie (hidden by default) -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Movie</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="add-movie-form">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+              </div>
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="poster">Poster URL</label>
+                <input type="url" class="form-control" id="poster" name="poster" required>
+              </div>
+              <div class="form-group">
+                <label for="runtime">Runtime (minutes)</label>
+                <input type="number" class="form-control" id="runtime" name="runtime" required>
+              </div>
+              <div class="form-group">
+                <label for="capacity">Capacity</label>
+                <input type="number" class="form-control" id="capacity" name="capacity" required>
+              </div>
+              <div class="form-group">
+                <label for="showtime">Showtime</label>
+                <input type="text" class="form-control" id="showtime" name="showtime" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Add Movie</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
