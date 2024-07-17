@@ -36,7 +36,7 @@ Download live server. Open index.html file, right click and choose the option fo
 
 - You can use this link and open the website to access the code.
 ```
-https://vercel.com/nikitaamanis-projects/week-3-final
+https://week3finaleee.vercel.app/
  ```
 
 
